@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shower Glow Section</title>
+
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap & Slick CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+  <style>
+    /* Section styling */
+    .shower-glow {
+      background-color: #0B55930A;
+      padding-top: 24px !important;
+      padding-bottom: 0 !important;
+    }
+  .shower-glow-heading {
+   margin-bottom: 32px;
+  }
+    /* Heading styling */
+    .shower-glow-heading h2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 100%;
+      letter-spacing: -0.06em;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .shower-glow-heading h2 span {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: -0.06em;
+      text-transform: capitalize;
+    }
+    .shower-glow-subtext {
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      margin-top: 8px;
+      display: block;
+      max-width: 400px;
+      padding-left: 15px;
+      letter-spacing: -0.04em
+    }
+
+    /* Slider images */
+    .shower-glow-slide {
+      position: relative;
+      padding-left: 15px;
+      padding-bottom: 24px;
+    }
+    .shower-glow-slide img {
+      border-radius: 16px;
+      max-width: 280px;
+      width: 100%;
+      
+      height: 280px;
+
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Overlay text */
+    .shower-glow-overlay {
+      /* display: none; */
+      position: absolute;
+    bottom: 21px;
+    left: 25px;
+    background: rgba(255, 255, 255, 0.7);
+     -webkit-backdrop-filter: blur(20px); /* Safari & Chrome */
+  backdrop-filter: blur(20px);
+    border-radius: 9px;
+    padding: 8px 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+    max-width: 239px;
+    }
+  
+
+     .slick-initialized .slick-slide{
+      max-width: 280px;
+      max-height: 280px;
+     }
+  .container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+    /* Remove default slick dots */
+    .slick-dots {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Shower Glow Section -->
+  <section class="shower-glow py-3">
+    <div class="container">
+      <!-- Heading -->
+      <div class="shower-glow-heading ">
+        <h2>
+          Your Shower’s <span>Glow</span> Boost
+        </h2>
+        <p class="shower-glow-subtext">
+         Afina filters out chlorine, heavy metals & impuritiesIt’s not just a filter— it’s a skin- and hair-loving upgrade to your entire routine.
+        </p>
+      </div>
+
+      <!-- Slick Slider -->
+      <div class="shower-glow-slider">
+        <div class="shower-glow-slide">
+          <img src="assets\photo4.png" alt="Shower" class="img-fluid">
+          <div class="shower-glow-overlay">
+            Easy To Install And Strong Water Pressure
+          </div>
+        </div>
+        <div class="shower-glow-slide">
+          <img src="assets\photo2.png" alt="Shower" class="img-fluid">
+          <div class="shower-glow-overlay">
+            Boosts Skin Hydration & Reduces Itchiness
+          </div>
+        </div>
+       
+        
+        <div class="shower-glow-slide">
+          <img src="assets\photo1.png" alt="Shower" class="img-fluid">
+          <div class="shower-glow-overlay">
+            Nourishes your skin and scalp with every Wash
+          </div>
+        </div>
+        <div class="shower-glow-slide">
+          <img src="assets\photo3.png" alt="Shower" class="img-fluid">
+          <div class="shower-glow-overlay">
+            Softer strands with less tangling and breakage
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery & Slick JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+   
+$(document).ready(function(){
+  $('.shower-glow-slider').slick({
+    slidesToShow: 1.5,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false, // dots removed
+    infinite: true,
+    edgeFriction: 0,
+    swipeToSlide: true,
+    touchMove: true
+  });
+});
+
+
+  </script>
+
+</body>
+</html>
