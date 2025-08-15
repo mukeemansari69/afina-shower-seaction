@@ -111,6 +111,18 @@
     .slick-dots {
       display: none !important;
     }
+
+
+    /* Space create karne ke liye */
+.shower-glow-slider .slick-list {
+  padding-right: 30% !important; /* Ye next slide ka half dikhayega */
+}
+
+/* Slides ke beech gap */
+.shower-glow-slide {
+  margin-right: 15px;
+}
+
   </style>
 </head>
 <body>
@@ -166,19 +178,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
   <script>
-   
-$(document).ready(function(){
+  $(document).ready(function(){
   $('.shower-glow-slider').slick({
-    slidesToShow: 1.5,
+    slidesToShow: 1, // Pehla poora dikhane ke liye
     slidesToScroll: 1,
     arrows: false,
-    dots: false, // dots removed
+    dots: false,
     infinite: true,
-    edgeFriction: 0,
     swipeToSlide: true,
-    touchMove: true
+    touchMove: true,
+    centerMode: false,
+    initialSlide: 0
   });
 });
+
 
 
   </script>
